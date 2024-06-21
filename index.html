@@ -7,7 +7,7 @@
       <meta content="Strategic localisation partner | Rian" property="og:title"/>
       <meta content="Scale up dubbing for your productions faster and more cost-efficiently than ever with the end-to-end localization platform made for voice production." property="og:description"/>
       <meta content="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6571cbf40c7e3c23d3732e2e_Open%20Graph%20-%20Home.webp" property="og:image"/>
-      <meta content="Strategic localisation partner | Rianb" property="twitter:title"/>
+      <meta content="Strategic localisation partner | Rian" property="twitter:title"/>
       <meta content="Scale up dubbing for your productions faster and more cost-efficiently than ever with the end-to-end localization platform made for voice production." property="twitter:description"/>
       <meta content="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6571cbf40c7e3c23d3732e2e_Open%20Graph%20-%20Home.webp" property="twitter:image"/>
       <meta property="og:type" content="website"/>
@@ -18,6 +18,8 @@
       <link href="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6568a2d6aafc7dcda1c8a23b_favicon.png" rel="shortcut icon" type="image/x-icon"/>
       <link href="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6568a2da73f0ce51c2e25840_webclip%20-%20deepdub.png" rel="apple-touch-icon"/>
       <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CLYDEP1RYQ"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-CLYDEP1RYQ');</script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+      
       <style>
          .dub-label, .vector {pointer-events: none;}
          /* Hubspot Forms */
@@ -38,6 +40,7 @@
       <!-- End VWO -->
    </head>
    <body>
+      <div id="react-root"></div>
       <div class="w-embed">
          <style>body{font-size:1.1111111111111112vw;-webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased;}@media screen and (min-width:1440px){body{font-size:16px}}.container{max-width:1440px}@media screen and (max-width:991px){body{font-size:14px}}.w-richtext>:first-child{margin-top:0}.w-richtext ol li:last-child,.w-richtext ul li:last-child,.w-richtext>:last-child{margin-bottom:0}.w-dropdown-btn,.w-dropdown-link,.w-dropdown-toggle,.w-nav-link,.w-tab-link,a{color:inherit}.dub-button.is-checked{color:#07321f; background:#00de7f}.dub-label.is-green{color:#07321f}.dashed-line {background: repeating-linear-gradient(90deg,rgba(255, 255, 255, 0.2) 0 8px,#0000 0 20px)}select {-webkit-appearance: none;-moz-appearance: none;appearance: none;outline: none;}.select-arrow {pointer-events: none;}.title-limit {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}.limit-text {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;}.tech-grid::-webkit-scrollbar {height: 14px}.tech-grid::-webkit-scrollbar-thumb {background: #f391ff;border: solid 4px #141318;border-radius: 50px;}</style>
       </div>
@@ -631,7 +634,11 @@
             </div>
          </div>
       </section>
-      <section class="section is-small">
+
+
+
+
+      <!-- <section class="section is-small">
          <div class="container">
             <div data-aos="fade-up" id="w-node-_4acc8753-10b3-6bea-e5ff-1fafb56b8c50-2f9399c3" class="intro has-16-gap">
                <div id="w-node-fd368d8b-19c6-d8fe-bc33-cbfd1fd9e0ae-2f9399c3" class="badge">Our secret sauce</div>
@@ -662,7 +669,60 @@
                <p id="w-node-e81ac289-164e-b56f-3065-06d5121e5e49-2f9399c3" class="heading is-subheading"><span class="pink-text">With our unique eTTS™ technology</span>, a first of its kind, you can create human-sounding voices from text at a large scale and with full emotional support – all with commercial rights built in. The possibilities are endless →</p>
             </div>
          </div>
-      </section>
+      </section> -->
+
+
+      <section class="services-section">
+         <div class="services-container">
+           <h3>Services We Offer</h3>
+     
+           <div class="service-boxes">
+             <div class="service-box blue">
+               <img src="./Assets/rianImagePlatform.png" alt="Service 1" />
+               <h4>Rian Platform</h4>
+               <p>Seamlessly blend AI and Human Intelligence to overcome language barriers.</p>
+             </div>
+     
+             <div class="service-box violet">
+               <img src="./Assets/videolocalization.png" alt="Service 2" />
+               <h4>Video Localization</h4>
+               <p>Simple, Quick, and Effortless process with project management features!</p>
+             </div>
+     
+             <div class="service-box yellow">
+               <img src="./Assets/documentation1.png" alt="Service 3" />
+               <h4>Document Translation/ Localization</h4>
+               <p>Revolutionize Content Localization.</p>
+             </div>
+           </div>
+         </div>
+       </section>
+     
+       <!-- Other content of your HTML file -->
+     
+       <script>
+         document.addEventListener('DOMContentLoaded', function () {
+           const boxes = document.querySelectorAll('.service-box');
+     
+           const handleScroll = () => {
+             const bottomOfViewport = window.scrollY + window.innerHeight;
+     
+             boxes.forEach(box => {
+               const boxTop = box.offsetTop;
+     
+               if (bottomOfViewport > boxTop) {
+                 box.style.opacity = '1';
+                 box.style.transform = 'translateY(0)';
+               }
+             });
+           };
+     
+           window.addEventListener('scroll', handleScroll);
+           handleScroll();
+         });
+       </script>
+
+
       <section class="section is-green no-gap-bottom">
          <div class="container">
             <div id="w-node-_3825100c-5e05-5b83-d01c-bb876c2c79c3-2f9399c3" class="intro has-mockup">
@@ -800,7 +860,76 @@
             <img src="./Assets/documentation-webp.webp" loading="lazy" width="623" height="600" alt="Import Export Files" data-aos="fade-up" id="w-node-c893ab1c-aaf8-4170-777f-d1603aa301d7-2f9399c3" class="contained-image has-radius"/>
          </div>
       </section>
-      <section class="section no-gap-top">
+
+
+
+      <!-- <div class="containerslide">
+         <div id="image-slider" class="splide">
+             <div class="splide__track">
+                 <ul class="splide__list">
+                     <li class="splide__slide">
+                         <div class="card">
+                             <img src="./Assets/documentation-webp.webp" alt="Luiz Ortiz" class="profile-image">
+                             <div class="content">
+                                 <h2>Luiz Ortiz</h2>
+                                 <p class="original-label">Documentation</p>
+                                 <button class="play-sample">Play sample</button>
+                             </div>
+                         </div>
+                     </li>
+                     <li class="splide__slide">
+                         <div class="card">
+                             <img src="./Assets/videoLoc.webp" alt="Wilma Heine" class="profile-image">
+                             <div class="content">
+                                 <h2>Wilma Heine</h2>
+                                 <p class="original-label">VideoLocalisation</p>
+                                 <button class="play-sample">Play sample</button>
+                             </div>
+                         </div>
+                     </li>
+                     <li class="splide__slide">
+                        <div class="card">
+                            <img src="./Assets/rianImagePlatform.webp" alt="Wilma Heine" class="profile-image">
+                            <div class="content">
+                                <h2>Wilma Heine</h2>
+                                <p class="original-label">Rian Platform</p>
+                                <button class="play-sample">Play sample</button>
+                            </div>
+                        </div>
+                    </li>
+                     
+                 </ul>
+             </div>
+         </div>
+         <div class="text-content">
+             <ul>
+                 <li>Video Localization - Create own vocal emotion bank to access on demand</li>
+                 <li> voice cloning with no model training</li>
+                 <li>Professional voice cloning on demand for creation and post-production</li>
+                 <li>Bespoke voice bank and emotion for each client</li>
+                 
+             </ul>
+         </div>
+     </div>
+     
+     
+     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+     <script>
+         document.addEventListener('DOMContentLoaded', function () {
+             new Splide('#image-slider', {
+                 type   : 'fade',
+                 perPage: 1,
+                 arrows : true,
+                 pagination: false,
+                 height : '100vh',
+             }).mount();
+         });
+     </script> -->
+
+
+
+
+       <section class="section no-gap-top">
          <div class="container">
             <div data-aos="fade-up" id="w-node-_0d08c30e-e688-4b34-2488-871289637006-2f9399c3" class="intro has-16-gap">
                <h2 id="w-node-_0d08c30e-e688-4b34-2488-871289637008-2f9399c3" class="heading is-display">Voice cloning means there’s <span class="line-break"> </span><span class="pink-text">no need to re-record</span></h2>
@@ -811,13 +940,13 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div id="w-node-_9a5eee05-2158-8124-72bb-30733c48a85f-2f9399c3" class="sound-card">
-                           <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6569ade671761a4e9538837b_EN%20-%20Original.webp" loading="lazy" width="302" height="427" alt="" srcset="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6569ade671761a4e9538837b_EN%20-%20Original-p-500.webp 500w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6569ade671761a4e9538837b_EN%20-%20Original.webp 604w" sizes="256px" class="contained-image has-radius"/>
+                           <img src="./Assets/english.jpg" loading="lazy" width="302" height="427" alt="" srcset="./Assets/english.jpg 500w, ./Assets/english.jpg 604w" sizes="256px" class="contained-image has-radius"/>
                            <div class="flag-box">
-                              <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6569aeb622c1091780d3c723_us-flag.webp" loading="lazy" width="41.5" height="33" alt="" id="w-node-_5a08490f-c26a-3b7e-5738-98a842e26b2c-2f9399c3"/>
+                              <!-- <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6569aeb622c1091780d3c723_us-flag.webp" loading="lazy" width="41.5" height="33" alt="" id="w-node-_5a08490f-c26a-3b7e-5738-98a842e26b2c-2f9399c3"/> -->
                               <div id="w-node-ba698545-312e-6637-b449-b837238d82ec-2f9399c3" class="tiny-text is-bold">English</div>
                            </div>
                            <div class="audio-box">
-                              <div id="w-node-_5379aee1-c7c8-6859-7148-7c904e5a5943-2f9399c3" class="heading is-subheading">Luiz Ortiz</div>
+                              <div id="w-node-_5379aee1-c7c8-6859-7148-7c904e5a5943-2f9399c3" class="heading is-subheading">Voice in English</div>
                               <div id="w-node-_342404b1-e0c2-b216-be40-911990f6aac3-2f9399c3" class="badge is-big">Original</div>
                               <div id="w-node-_28fa7df9-9e57-383f-99c3-a7302667fdf7-2f9399c3" class="wave-wrap">
                                  <div id="waveform" class="wave w-node-_2619e87f-8d86-3994-cf6f-95560e3d7871-2f9399c3"></div>
@@ -840,13 +969,13 @@
                      </div>
                      <div class="swiper-slide">
                         <div id="w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2b2-2f9399c3" class="sound-card">
-                           <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a1232470f8d99eaa44dcc_LAS.webp" loading="lazy" width="302" height="427" alt="" srcset="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a1232470f8d99eaa44dcc_LAS-p-500.webp 500w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a1232470f8d99eaa44dcc_LAS.webp 605w" sizes="256px" class="contained-image has-radius"/>
+                           <img src="./Assets/japanese.jpg" loading="lazy" width="302" height="427" alt="" srcset="./Assets/japanese.jpg 500w, ./Assets/japanese.jpg 605w" sizes="256px" class="contained-image has-radius"/>
                            <div class="flag-box">
-                              <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a1206c46efd5f796b521d_spanish-flag.webp" loading="lazy" width="41.5" height="33" alt="" id="w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2b5-2f9399c3"/>
-                              <div id="w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2b6-2f9399c3" class="tiny-text is-bold">Spanish</div>
+                              <!-- <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a1206c46efd5f796b521d_spanish-flag.webp" loading="lazy" width="41.5" height="33" alt="" id="w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2b5-2f9399c3"/> -->
+                              <div id="w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2b6-2f9399c3" class="tiny-text is-bold">Japanese</div>
                            </div>
                            <div class="audio-box">
-                              <div id="w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2b9-2f9399c3" class="heading is-subheading">Wilma Hayes</div>
+                              <div id="w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2b9-2f9399c3" class="heading is-subheading">Voice in Japanese</div>
                               <div id="w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2bd-2f9399c3" class="wave-wrap">
                                  <div id="waveform2" class="wave w-node-_10dfdcb3-51fb-8516-b44a-d6b7b0a3d2be-2f9399c3"></div>
                               </div>
@@ -868,13 +997,13 @@
                      </div>
                      <div class="swiper-slide">
                         <div id="w-node-_4f3a2af7-cd0c-efdc-727f-6383d522de3f-2f9399c3" class="sound-card">
-                           <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a12a37d401e507928364c_FR.webp" loading="lazy" width="302" height="427" alt="" srcset="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a12a37d401e507928364c_FR-p-500.webp 500w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a12a37d401e507928364c_FR.webp 604w" sizes="256px" class="contained-image has-radius"/>
+                           <img src="./Assets/french.jpg" loading="lazy" width="302" height="427" alt="" srcset="./Assets/french.jpg 500w, ./Assets/french.jpg 604w" sizes="256px" class="contained-image has-radius"/>
                            <div class="flag-box">
-                              <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a1274bc5a581f015d67b4_french-flag.webp" loading="lazy" width="41.5" height="33" alt="" id="w-node-_4f3a2af7-cd0c-efdc-727f-6383d522de42-2f9399c3"/>
+                              <!-- <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a1274bc5a581f015d67b4_french-flag.webp" loading="lazy" width="41.5" height="33" alt="" id="w-node-_4f3a2af7-cd0c-efdc-727f-6383d522de42-2f9399c3"/> -->
                               <div id="w-node-_4f3a2af7-cd0c-efdc-727f-6383d522de43-2f9399c3" class="tiny-text is-bold">French</div>
                            </div>
                            <div class="audio-box">
-                              <div id="w-node-_4f3a2af7-cd0c-efdc-727f-6383d522de46-2f9399c3" class="heading is-subheading">Hugo François</div>
+                              <div id="w-node-_4f3a2af7-cd0c-efdc-727f-6383d522de46-2f9399c3" class="heading is-subheading">Voice in French</div>
                               <div id="w-node-_4f3a2af7-cd0c-efdc-727f-6383d522de48-2f9399c3" class="wave-wrap">
                                  <div id="waveform3" class="wave w-node-_4f3a2af7-cd0c-efdc-727f-6383d522de49-2f9399c3"></div>
                               </div>
@@ -896,13 +1025,13 @@
                      </div>
                      <div class="swiper-slide">
                         <div id="w-node-_95010e77-067a-4dbd-8bdf-273c1e9af35a-2f9399c3" class="sound-card">
-                           <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a130ff7773d55ed2daebd_DE.webp" loading="lazy" width="302" height="427" alt="" srcset="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a130ff7773d55ed2daebd_DE-p-500.webp 500w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a130ff7773d55ed2daebd_DE.webp 604w" sizes="256px" class="contained-image has-radius"/>
+                           <img src="./Assets/german.jpg" loading="lazy" width="302" height="427" alt="" srcset="./Assets/german.jpg 500w, ./Assets/german.jpg 604w" sizes="256px" class="contained-image has-radius"/>
                            <div class="flag-box">
-                              <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a12e0bd291c779525ac1f_german-flag.webp" loading="lazy" width="41" height="33" alt="" id="w-node-_95010e77-067a-4dbd-8bdf-273c1e9af35d-2f9399c3"/>
-                              <div id="w-node-_95010e77-067a-4dbd-8bdf-273c1e9af35e-2f9399c3" class="tiny-text is-bold">Germany</div>
+                              <!-- <img src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/656a12e0bd291c779525ac1f_german-flag.webp" loading="lazy" width="41" height="33" alt="" id="w-node-_95010e77-067a-4dbd-8bdf-273c1e9af35d-2f9399c3"/> -->
+                              <div id="w-node-_95010e77-067a-4dbd-8bdf-273c1e9af35e-2f9399c3" class="tiny-text is-bold">German</div>
                            </div>
                            <div class="audio-box">
-                              <div id="w-node-_95010e77-067a-4dbd-8bdf-273c1e9af361-2f9399c3" class="heading is-subheading">Emilia Kroos</div>
+                              <div id="w-node-_95010e77-067a-4dbd-8bdf-273c1e9af361-2f9399c3" class="heading is-subheading">Voice in German</div>
                               <div id="w-node-_95010e77-067a-4dbd-8bdf-273c1e9af365-2f9399c3" class="wave-wrap">
                                  <div id="waveform4" class="wave w-node-_95010e77-067a-4dbd-8bdf-273c1e9af366-2f9399c3"></div>
                               </div>
@@ -925,9 +1054,9 @@
                   </div>
                </div>
                <div class="swiper-bullet-wrapper"><a href="#" class="swiper-bullet is-active w-inline-block"></a><a href="#" class="swiper-bullet w-inline-block"></a></div>
-               <div class="intro max-width-308">
+               <!-- <div class="intro max-width-308">
                   <p class="small-text">Original English with artist’s personality → <span class="green-lite-text is-medium">cloned into different characters and languages</span></p>
-               </div>
+               </div> -->
                <div id="w-node-_47166f23-8a59-84ed-67d6-b91b3584aa61-2f9399c3" class="hidden">
                   <div class="swiper-slide is-active"></div>
                </div>
@@ -935,9 +1064,10 @@
             <div id="w-node-_8fce9938-e3f1-71b9-1127-ffca57bdd81e-2f9399c3" class="box has-24-gap">
                <div data-aos="fade-up" id="w-node-e499b926-07d2-7121-d3f3-d190b48b70ba-2f9399c3" class="flex has-16-gap">
                   <div class="vector align-top w-embed">
-                     <svg width="19" height="25" viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.36623 15.818C8.31072 15.818 7.41354 15.4496 6.67469 14.7128C5.93583 13.9759 5.56641 13.0812 5.56641 12.0286V4.4496C5.56641 3.39697 5.93583 2.50223 6.67469 1.76539C7.41354 1.02855 8.31072 0.660126 9.36623 0.660126C10.4217 0.660126 11.3189 1.02855 12.0578 1.76539C12.7966 2.50223 13.1661 3.39697 13.1661 4.4496V12.0286C13.1661 13.0812 12.7966 13.9759 12.0578 14.7128C11.3189 15.4496 10.4217 15.818 9.36623 15.818Z" fill="#F53700"/>
-                        <path d="M8.09965 24.6601V20.7759C5.90419 20.4811 4.08872 19.5022 2.65323 17.839C1.21774 16.1759 0.5 14.239 0.5 12.0285H3.03322C3.03322 13.7759 3.65069 15.2654 4.88563 16.4969C6.12057 17.7285 7.61412 18.3443 9.36626 18.3443C11.1184 18.3443 12.6119 17.7285 13.8469 16.4969C15.0818 15.2654 15.6993 13.7759 15.6993 12.0285H18.2325C18.2325 14.239 17.5148 16.1759 16.0793 17.839C14.6438 19.5022 12.8283 20.4811 10.6329 20.7759V24.6601H8.09965Z" fill="#E4E4E4"/>
+                     <svg xmlns="http://www.w3.org/2000/svg"  width="25" height="31" enable-background="new 0 0 47.5 47.5" viewBox="0 0 47.5 47.5" id="video"><defs><clipPath id="a"><path d="M0 38h38V0H0v38Z"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)"><path fill="#58595b" d="M0 0a7 7 0 1 0-14.001.001A7 7 0 0 0 0 0" transform="translate(25 26)"></path><path fill="#58595b" d="M0 0a6 6 0 0 0-12 0A6 6 0 0 0 0 0" transform="translate(34.999 23)"></path><path fill="#939598" d="M0 0a5 5 0 1 0-10.001.001A5 5 0 0 0 0 0" transform="translate(23 26)"></path><path fill="#bcbec0" d="M0 0c0-1.104-1-2-2-2s-2 .896-2 2a2 2 0 0 0 4 0" transform="translate(20 26)"></path><path fill="#58595b" d="M0 0a4 4 0 0 0-4-4h-13a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h13a4 4 0 0 0 4-4V0Z" transform="translate(31 8)"></path><path fill="#58595b" d="M24 19h-3v3h3v-3z"></path><path fill="#939598" d="M0 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0" transform="translate(32.999 23)"></path><path fill="#bcbec0" d="M0 0a2 2 0 1 0-4.001.001A2 2 0 0 0 0 0" transform="translate(30.999 23)"></path><path fill="#58595b" d="M0 0h-2l-6 4h-1v-14h1l6 4h2a3 3 0 1 1 0 6" transform="translate(11 16)"></path><path fill="#58595b" d="M0 0v-1h-5a2 2 0 0 1 0-4h5v-1h3v6H0z" transform="translate(33 16)"></path><path fill="#808285" d="M28 7H18v10h10V7Z"></path><path fill="#58595b" d="M26 9h-6v6h6V9z"></path><path fill="#808285" d="M0 0a2 2 0 1 0-4.001.001A2 2 0 0 0 0 0" transform="translate(15.999 9)"></path></g></svg>
+                        
+                        <!-- <path d="M9.36623 15.818C8.31072 15.818 7.41354 15.4496 6.67469 14.7128C5.93583 13.9759 5.56641 13.0812 5.56641 12.0286V4.4496C5.56641 3.39697 5.93583 2.50223 6.67469 1.76539C7.41354 1.02855 8.31072 0.660126 9.36623 0.660126C10.4217 0.660126 11.3189 1.02855 12.0578 1.76539C12.7966 2.50223 13.1661 3.39697 13.1661 4.4496V12.0286C13.1661 13.0812 12.7966 13.9759 12.0578 14.7128C11.3189 15.4496 10.4217 15.818 9.36623 15.818Z" fill="#F53700"/> -->
+                        <!-- <path d="M8.09965 24.6601V20.7759C5.90419 20.4811 4.08872 19.5022 2.65323 17.839C1.21774 16.1759 0.5 14.239 0.5 12.0285H3.03322C3.03322 13.7759 3.65069 15.2654 4.88563 16.4969C6.12057 17.7285 7.61412 18.3443 9.36626 18.3443C11.1184 18.3443 12.6119 17.7285 13.8469 16.4969C15.0818 15.2654 15.6993 13.7759 15.6993 12.0285H18.2325C18.2325 14.239 17.5148 16.1759 16.0793 17.839C14.6438 19.5022 12.8283 20.4811 10.6329 20.7759V24.6601H8.09965Z" fill="#E4E4E4"/> -->
                      </svg>
                   </div>
                   <p class="heading is-leading-text"><span class="pink-text">Create your own vocal emotion bank</span> to access on demand</p>
@@ -987,7 +1117,11 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> 
+
+
+
+
       <section class="section is-large">
          <div class="container">
             <div data-aos="fade-up" id="w-node-_5df0d0f9-ed43-3bd3-c70f-fe31dced113f-dced113d" class="intro has-16-gap">
@@ -997,7 +1131,7 @@
             <div data-aos="fade-up" id="w-node-_5df0d0f9-ed43-3bd3-c70f-fe31dced1144-dced113d" class="intro has-8-gap"><a id="w-node-_5df0d0f9-ed43-3bd3-c70f-fe31dced1145-dced113d" href="/demo" class="button w-button">Book a demo</a></div>
          </div>
          <div class="background">
-            <div class="bg-container is-centered"><img data-aos="fade-in" class="cta-image" src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg.webp" width="2560" height="545" alt="CTA Background" sizes="100vw" loading="lazy" srcset="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-500.webp 500w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-800.webp 800w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-1080.webp 1080w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-1600.webp 1600w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-2000.webp 2000w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-2600.webp 2600w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-3200.webp 3200w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg.webp 5120w"/></div>
+            <!-- <div class="bg-container is-centered"><img data-aos="fade-in" class="cta-image" src="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg.webp" width="2560" height="545" alt="CTA Background" sizes="100vw" loading="lazy" srcset="https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-500.webp 500w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-800.webp 800w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-1080.webp 1080w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-1600.webp 1600w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-2000.webp 2000w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-2600.webp 2600w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg-p-3200.webp 3200w, https://cdn.prod.website-files.com/655b714ebf7407f92f939947/6584607ca8e0d47babcd591b_CTA%202560px%20Lines%20Bg.webp 5120w"/></div> -->
             <div class="cta-gradient"></div>
          </div>
       </section>
@@ -1460,16 +1594,16 @@
          outplayhq.init("8550735e16a112b03ee1d91aa3189542");
       </script>  
       <script>
-         function updatePreferencesFromHubSpotOptOut(optOutStatus) {
+         // function updatePreferencesFromHubSpotOptOut(optOutStatus) {
            
-                 var preferences = (optOutStatus === 'yes') ? 'declined' : 'accepted';
+         //         var preferences = (optOutStatus === 'yes') ? 'declined' : 'accepted';
          
-                 window.dataLayer = window.dataLayer || [];
-                 window.dataLayer.push({
-                     'event': 'cookiePreferencesSet',
-                     'preferences': preferences
-                 });
-             }
+         //         window.dataLayer = window.dataLayer || [];
+         //         window.dataLayer.push({
+         //             'event': 'cookiePreferencesSet',
+         //             'preferences': preferences
+         //         });
+         //     }
          
              document.getElementById('hs-eu-confirmation-button').addEventListener('click', function() {
                  updatePreferencesFromHubSpotOptOut('no');
@@ -1478,23 +1612,24 @@
              document.getElementById('hs-eu-decline-button').addEventListener('click', function() {
                  updatePreferencesFromHubSpotOptOut('yes');
              });  
-      </script><script>
+      </script> 
+      <script>
          $('.check').on('click', function() {
            $(this).closest('.dub-button').toggleClass('is-checked');
            $(this).siblings('.dub-label').toggleClass('is-green');
          });
       </script>
       <!-- Splide Slider -->
-      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+      <script src="./splide.min.js"></script>
+      <link rel="stylesheet" href="splide.min.css">
+      <script src="./splide-extension-auto-scroll.min.js"></script>
       <script>new Splide(".logo-carousel",{perPage:9,type:"loop",pagination:!1,arrows:!1,drag:!1,autoWidth:!0,autoHeight:!0,autoScroll:{speed:0.5,pauseOnHover:!1}}).mount(window.splide.Extensions);</script>
       <!-- Store Active Checkboxes -->
       <script>
          $(document).ready(function(){$('form[data-form="get-started"]').submit(function(t){t.preventDefault();var e={};$(this).find('input[type="checkbox"]').each(function(){var t=$(this).data("name"),i=$(this).is(":checked")||$(this).siblings("label").hasClass("is-checked");e[t]=i}),localStorage.setItem("checkboxStates",JSON.stringify(e))})});
       </script>
       <!-- Wavesurfer -->
-      <script src="https://unpkg.com/wavesurfer.js"></script>
+      <!-- <script src="https://unpkg.com/wavesurfer.js"></script>
       <script>
          var wavesurfer=WaveSurfer.create({container:"#waveform",waveColor:"#66646A",progressColor:"#79EE47",cursorColor:"rgba(255, 255, 255, 0)",barWidth:3,barGap:2,barRadius:2,url:"https://pub-eff6379ec5404866ace02ec49c8b5b5c.r2.dev/Carousel/MAN%20EN.wav"});wavesurfer.on("interaction",()=>{wavesurfer.play(), wavesurfer2.pause(),wavesurfer3.pause(),wavesurfer4.pause()}),document.querySelector("#play-english").addEventListener("click",()=>{wavesurfer.playPause(),wavesurfer2.pause(),wavesurfer3.pause(),wavesurfer4.pause()}),wavesurfer.on("play",()=>{$("#play-english").find(".play-icon").css("display","none"),$("#play-english").find(".pause-icon").css("display","flex")}),wavesurfer.on("pause",()=>{$("#play-english").find(".play-icon").css("display","flex"),$("#play-english").find(".pause-icon").css("display","none")}),wavesurfer.on("finish",()=>{$("#play-english").find(".play-icon").css("display","flex"),$("#play-english").find(".pause-icon").css("display","none")});
          
@@ -1503,9 +1638,9 @@
          var wavesurfer3=WaveSurfer.create({container:"#waveform3",waveColor:"#66646A",progressColor:"#79EE47",cursorColor:"rgba(255, 255, 255, 0)",barWidth:3,barGap:2,barRadius:2,url:"https://pub-eff6379ec5404866ace02ec49c8b5b5c.r2.dev/Carousel/FR%20M2.wav"});wavesurfer3.on("interaction",()=>{wavesurfer3.play(),wavesurfer.pause(),wavesurfer2.pause(),wavesurfer4.pause()}),document.querySelector("#play-french").addEventListener("click",()=>{wavesurfer3.playPause(),wavesurfer.pause(),wavesurfer2.pause(),wavesurfer4.pause()}),wavesurfer3.on("play",()=>{$("#play-french").find(".play-icon").css("display","none"),$("#play-french").find(".pause-icon").css("display","flex")}),wavesurfer3.on("pause",()=>{$("#play-french").find(".play-icon").css("display","flex"),$("#play-french").find(".pause-icon").css("display","none")}),wavesurfer3.on("finish",()=>{$("#play-french").find(".play-icon").css("display","flex"),$("#play-french").find(".pause-icon").css("display","none")});
          
          var wavesurfer4=WaveSurfer.create({container:"#waveform4",waveColor:"#66646A",progressColor:"#79EE47",cursorColor:"rgba(255, 255, 255, 0)",barWidth:3,barGap:2,barRadius:2,url:"https://pub-eff6379ec5404866ace02ec49c8b5b5c.r2.dev/Carousel/DE%20W1.wav"});wavesurfer4.on("interaction",()=>{wavesurfer4.play(),wavesurfer.pause(),wavesurfer2.pause(),wavesurfer3.pause()}),document.querySelector("#play-german").addEventListener("click",()=>{wavesurfer4.playPause(),wavesurfer.pause(),wavesurfer2.pause(),wavesurfer3.pause()}),wavesurfer4.on("play",()=>{$("#play-german").find(".play-icon").css("display","none"),$("#play-german").find(".pause-icon").css("display","flex")}),wavesurfer4.on("pause",()=>{$("#play-german").find(".play-icon").css("display","flex"),$("#play-german").find(".pause-icon").css("display","none")}),wavesurfer4.on("finish",()=>{$("#play-german").find(".play-icon").css("display","flex"),$("#play-german").find(".pause-icon").css("display","none")});
-      </script>
+      </script> -->
       <!-- Swiper -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="./swiper-bundle.min.js"></script>
       <script>
          $(".slider-component").each(function (index) {
            const swiper = new Swiper($(this).find(".swiper")[0], {
