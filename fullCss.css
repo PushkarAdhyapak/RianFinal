@@ -221,10 +221,15 @@ html {
 
 
   .services-container {
+    
     padding: 2rem 2rem; /* Maintain left and right padding */
     text-align: center;
     margin: 3rem auto;
     box-sizing: border-box;
+  }
+
+  .services-section {
+    margin-bottom: 6em;
   }
   
   .service-boxes {
@@ -269,10 +274,12 @@ html {
   
   .service-box h4 {
     margin: 0 0 0.5rem 0.5rem; /* Margin to the right of the image */
+    text-align: left;
   }
   
   .service-box p {
     margin: 0.5rem 0 0 0.5rem; /* Margin below the heading */
+    text-align: left;
   }
   
   /* Default colors */
@@ -2159,7 +2166,7 @@ html {
 
 .custom-text {
     font-size: 2rem;
-    line-height: 1.5; /* Adjusted line height */
+     line-height: 1.5; /* Adjusted line height */
     margin-bottom: 1rem;
 }
 
@@ -2558,6 +2565,11 @@ html {
   }
   .heading.is-subheading.is-white.is-second {
     font-size: 1.75em;
+  }
+
+  .heading is-leading-edited {
+    letter-spacing: -0.8px;
+    font-size: 2.5em;
   }
   .heading.is-leading-text {
     letter-spacing: -0.5px;
